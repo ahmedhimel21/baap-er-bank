@@ -17,18 +17,24 @@
     </header>
     <main>
       <section class="mt-12">
-        <div class="w-9/12 mx-auto grid grid-cols-1 lg:grid-cols-3 text-white gap-4">
+        <div
+          class="w-9/12 mx-auto grid grid-cols-1 lg:grid-cols-3 text-white gap-4"
+        >
           <div class="bg-green-400 px-5 py-8 rounded-lg">
-            <h4 class="text-3xl font-medium">Deposit</h4>
-            <h2 class="text-5xl font-semibold">$00</h2>
+            <h4 class="text-3xl font-medium mb-2">Deposit</h4>
+            <h2 class="text-5xl font-semibold">
+              $<span id="deposit-amount">00</span>
+            </h2>
           </div>
           <div class="bg-amber-400 px-5 py-8 rounded-lg">
-            <h4 class="text-3xl font-medium">Withdraw</h4>
+            <h4 class="text-3xl font-medium mb-2">Withdraw</h4>
             <h2 class="text-5xl font-semibold">$00</h2>
           </div>
           <div class="bg-violet-400 px-8 py-4 rounded-lg">
-            <h4 class="text-3xl font-medium">Balance</h4>
-            <h2 class="text-5xl font-semibold">$1240</h2>
+            <h4 class="text-3xl font-medium mb-2">Balance</h4>
+            <h2 class="text-5xl font-semibold">
+              $<span id="balance-total">1240</span>
+            </h2>
           </div>
         </div>
       </section>
@@ -36,12 +42,12 @@
       <section class="mt-12">
         <div class="w-9/12 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div class="bg-cyan-400 px-5 py-8 rounded-lg">
-            <h1 class="text-3xl font-medium mb-3 text-white ">Please Deposit</h1>
+            <h1 class="text-3xl font-medium mb-3 text-white">Please Deposit</h1>
             <input
               class="w-9/12 block mb-2 px-4 py-2 rounded-lg"
               type="text"
               name=""
-              id="deposit"
+              id="deposit-field"
               placeholder="$ amount you want to deposit"
             />
             <button
@@ -52,12 +58,14 @@
             </button>
           </div>
           <div class="bg-fuchsia-400 px-5 py-8 rounded-lg">
-            <h1 class="text-3xl font-medium mb-3 text-white ">Please Withdraw</h1>
+            <h1 class="text-3xl font-medium mb-3 text-white">
+              Please Withdraw
+            </h1>
             <input
               class="w-9/12 block mb-2 px-4 py-2 rounded-lg"
               type="text"
               name=""
-              id="withdraw"
+              id="withdraw-field"
               placeholder="$ amount you want to withdraw"
             />
             <button
@@ -70,5 +78,8 @@
         </div>
       </section>
     </main>
+
+    <!-- js -->
+    <script src="js/deposit.js"></script>
   </body>
 </html>
