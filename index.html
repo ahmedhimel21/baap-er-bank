@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Baap Er Bank</title>
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon" />
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -22,18 +23,26 @@
           class="w-9/12 block mb-2 px-4 py-2 rounded-lg"
           type="email"
           name=""
-          id=""
+          id="userEmail"
           placeholder="demo@gmail.com"
         />
         <input
           class="w-9/12 block mb-3 px-4 py-2 rounded-lg"
           type="password"
           name=""
-          id=""
+          id="userPassword"
           placeholder="***********"
         />
-        <button class="bg-amber-500 px-4 py-2 text-white rounded-lg">Login</button>
+        <button
+          id="btn-login"
+          class="bg-amber-500 hover:bg-amber-600 px-4 py-2 text-white rounded-lg"
+        >
+          Login
+        </button>
       </section>
     </main>
+
+    <!-- js -->
+    <script src="js/login.js"></script>
   </body>
 </html>
